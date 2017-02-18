@@ -29,7 +29,7 @@ L.geoJSON(subwayStations, {
 	onEachFeature: function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.LINEA && feature.properties.ESTACION) {
         layer.bindPopup(
-        	'Station: ' + feature.properties.ESTACION + ' - 	' + feature.properties.LINEA + ' Line';
+        	'Station: ' + feature.properties.ESTACION + ' - ' + feature.properties.LINEA + ' Line'
         	);
     }
 },
